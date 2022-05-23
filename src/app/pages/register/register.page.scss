@@ -1,0 +1,28 @@
+.userIcon {
+  width: 100%;
+  height: 35vh;
+  text-align: center;
+
+  ion-icon {
+    font-size: 45vw;
+    height: 100%;
+  }
+}
+
+.inputContainer {
+  margin: 0px auto;
+  padding: 10px;
+
+  ion-input {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+  }
+}
+
+.registerButtons {
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}

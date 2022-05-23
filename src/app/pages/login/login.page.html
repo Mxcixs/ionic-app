@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="userIcon">
+    <ion-icon name="person-circle-outline"></ion-icon>
+  </div>
+  <div class="inputContainer">
+    <ion-input
+      type="email"
+      placeholder="Correo de usuario"
+      [(ngModel)]="user.email"
+      mode="md"
+    ></ion-input>
+  </div>
+  <div class="inputContainer">
+    <ion-input
+      type="password"
+      placeholder="Contraseña"
+      [(ngModel)]="user.password"
+      mode="md"
+    ></ion-input>
+  </div>
+  <div class="registerButtons">
+    <ion-button
+      color="success"
+      fill="outline"
+      (click)="onLogin()"
+      [disabled]="user.email == '' || user.password == ''"
+      >Iniciar sesión</ion-button
+    >
+  </div>
+  <div class="registerButtons">
+    <ion-button color="dark" fill="outline" [routerLink]="['../register']"
+      >Registrar</ion-button
+    >
+  </div>
+</ion-content>

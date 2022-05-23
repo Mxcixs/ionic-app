@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="users"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="{{characterInfo.image}}" />
+    <ion-card-header>
+      <ion-card-subtitle>{{characterInfo.status}}</ion-card-subtitle>
+      <ion-card-title>{{characterInfo.name}}</ion-card-title>
+    </ion-card-header>
+    <!-- <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the
+      Wisconsin Territory in 1836.
+    </ion-card-content> -->
+  </ion-card>
+</ion-content>
