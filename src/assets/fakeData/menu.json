@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "home-outline",
+    "name": "Home",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "people-outline",
+    "name": "Usuarios",
+    "redirectTo": "/users"
+  },
+  {
+    "icon": "settings-outline",
+    "name": "Configuración",
+    "redirectTo": "/settings"
+  }
+]

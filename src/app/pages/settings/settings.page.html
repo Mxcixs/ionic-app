@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Configuración</ion-title>
+    <ion-buttons slot="start">
+      <!-- <ion-menu-button></ion-menu-button> -->
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item lines="full">
+      <ion-icon slot="start" name="moon"></ion-icon>
+      <ion-label> Modo Oscuro </ion-label>
+      <!-- <ion-toggle
+        (ionChange)="toggle($event.detail.checked)"
+        id="themeToggle"
+        slot="end"
+      ></ion-toggle> -->
+      <ion-toggle
+        (ionChange)="toggle()"
+        [(ngModel)]="darkMode"
+        [checked]="darkMode"
+        slot="end"
+      ></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>
